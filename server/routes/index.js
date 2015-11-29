@@ -157,7 +157,7 @@ router.get('/todolist', function (req, res, next) {
 
         res.render('todolist', {
             title: 'Todos',
-            displayName: req.user ? req.user.userName : '',
+            displayName: req.user ? req.user.username : '',
             username: req.user ? req.user.username : '' 
         });
 
