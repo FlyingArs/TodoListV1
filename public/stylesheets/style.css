@@ -1,0 +1,36 @@
+/*
+ * File Name: style.css
+ * Author's Name: David Yu 200286902
+ * Website Name:donaldrich.heroku.com
+ * File Desciption: this my own stylesheet
+ */
+
+a,
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #5e5e5e;
+}
+
+img {
+    border: 0;
+}
+
+h4 {
+    font-size: 12px;
+    margin: 13px 0px 0px 0px;
+    padding: 0px;
+    color: black;
+    line-height: 17px;
+}
+
+body {
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    color: #5E5E5E;
+    background: #ebebeb;
+    padding: 0px;
+    margin: 0px;
+}

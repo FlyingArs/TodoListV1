@@ -1,0 +1,12 @@
+<%# File Name: users.ejs * Author's Name: David Yu 200286902 * Website Name:http://tomassignment3.azurewebsites.net/* File Desciption: This is a file created by the system. %>
+
+<%- include partials/header.ejs %>
+    <h1>Users</h1>
+    <ul>
+        <% for (var i=0; i < userlist.length; i++){ %>
+            <li>
+                <%= userlist[i] %>
+            </li>
+            <% } %>
+    </ul>
+    <%- include partials/footer.ejs %>

@@ -1,0 +1,50 @@
+<%# File Name: header.ejs * Author's Name: David Yu 200286902 * Website Name:http://tomassignment3.azurewebsites.net/ * File Desciption: The is the header of each page %>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>
+            <%= title %>
+        </title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <!--link to my own stylesheet-->
+        <link rel="stylesheet" href="stylesheets/style.css">
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse">
+
+            <ul class="nav navbar-nav">
+                <!--<li><a href="/">Home</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact Me</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/logout">Logout</a></li>-->
+
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact Me</a></li>
+
+                <% if (displayName) { %>
+                    <li><a href="/contacts">Business Contact List</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                    <% } else { %>
+                        <li><a href="/register">Register</a></li>
+                        <li><a href="/login">Login</a></li>
+                <!--<li class="navbar-text">Hello,
+              <% //displayName %>
+            </li>-->
+
+                <% } %>
+            </ul>
+        </nav>

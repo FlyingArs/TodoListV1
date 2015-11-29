@@ -1,0 +1,26 @@
+<%# File Name: contact.ejs * Author's Name: David Yu 200286902 * Website Name:http://tomassignment3.azurewebsites.net/ * File Desciption: this is a contact page html %>
+    <%- include partials/header.ejs %>
+        <h1><%= title %></h1>
+        <br />
+        <br />
+
+        <form class="form-horizontal" method="post">
+            <div class="form-group">
+                <label class="control-label">Name:</label>
+                <input name="name" type="text" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label class="control-label">Email:</label>
+                <input name="email" type="email" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label class="control-label">Ideas:</label>
+                <textarea rows="5" name="message" placeholder="You need to be concise here."></textarea>
+            </div>
+            <div class="form-group">
+                <div class="control">
+                    <button name="submit" type="submit" value="Send" class="btn">Submit</button>
+                </div>
+            </div>
+        </form>
+        <%- include partials/footer.ejs %>

@@ -1,0 +1,50 @@
+<%# File Name: index.ejs * Author's Name: David Yu 200286902 * Website Name:http://tomassignment3.azurewebsites.net/ * File Desciption: This file displays the busienss contact list %>
+<%- include ../partials/header.ejs %>
+
+    <main class="container">
+        <h1>Business Contacts List</h1>
+
+        <table class="table table-stripped">
+            <tr>
+                <th>Contact Name</th>
+                <th>Contact Number</th>
+                <th>Email Address</th>
+                <th>Update</th>
+                <th>Delete</th>
+
+            </tr>
+
+
+            <% for (var i = 0; i < contacts.length; i++ ){ %>
+                <tr>
+                    <td>
+                        <%= contacts[i].name %>
+                    </td>
+                    <td>
+                        <%= contacts[i].number %>
+                    </td>
+                    <td>
+                        <%= contacts[i].email %>
+                    </td>
+                    <td>
+                        <a href="/contacts/update/<%= contacts[i]._id %>" title="Update">
+                            <button type="button" class="btn btn-primary">Update</button>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/contacts/delete/<%= contacts[i]._id %>" title="Delete" onclick="return confirm('Do you really want to delete this?');">
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </a>
+                    </td>
+                </tr>
+
+                <% } %>
+
+        </table>
+
+
+    </main>
+
+    </body>
+
+    </html>
