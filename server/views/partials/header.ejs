@@ -9,9 +9,15 @@
         </title>
 
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
         <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">-->
+        
+        <!-- CSS Section -->
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+        
         <!--link to my own stylesheet-->
         <link rel="stylesheet" href="stylesheets/style.css">
 
@@ -37,6 +43,7 @@
 
                 <% if (displayName) { %>
                     <li><a href="/contacts">Business Contact List</a></li>
+                    <li><a href="/todolist">Todo List</a></li>
                     <li><a href="/logout">Logout</a></li>
                     <% } else { %>
                         <li><a href="/register">Register</a></li>

@@ -17,6 +17,7 @@ var session = require('express-session');
 var contact = require('./server/routes/contacts.js');
 var routes = require('./server/routes/index.js');
 var users = require('./server/routes/users');
+var todos = require('./server/routes/todos');
 
 var mongoose = require('mongoose');
 var flash = require('connect-flash');
@@ -65,6 +66,7 @@ app.use(passport.session());
 
 app.use('/contacts', contact);
 app.use('/users', users);
+app.use('/todos', todos);
 app.use('/', routes);
 
 //delcare the use of public folder

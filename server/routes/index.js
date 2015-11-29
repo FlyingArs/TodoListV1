@@ -152,4 +152,16 @@ router.get('/logout', function (req, res) {
     res.redirect('/');
 });
 
+/* Show Todo List Page */
+router.get('/todolist', function (req, res, next) {
+
+        res.render('todolist', {
+            title: 'Todos',
+            displayName: req.user ? req.user.userName : '',
+            username: req.user ? req.user.username : '' 
+        });
+
+});
+
+
 module.exports = router;
