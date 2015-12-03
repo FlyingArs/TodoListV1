@@ -1,3 +1,9 @@
+/*
+ * File Name: todo.js
+ * Author's Name: David Yu 200286902
+ * Website Name:http://todolistangular.azurewebsites.net/
+ * File Desciption: the handler that handles all the functions related to todo list
+ */
 var express = require('express');
 var passport = require('passport');
 var router = express.Router();
