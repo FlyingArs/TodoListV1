@@ -1,3 +1,9 @@
+/*
+ * File Name: todo.js
+ * Author's Name: David Yu 200286902
+ * Website Name:http://todolistangular.azurewebsites.net/
+ * File Desciption: this is the schema for the MongoDB todo table.
+ */
 // Todo Schema
 
 var mongoose = require('mongoose');
